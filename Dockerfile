@@ -11,7 +11,8 @@ RUN pip3 install -r requirements.txt
 WORKDIR /app/api
 
 # Set a non-root user
-USER 10014
+USER 10016
+EXPOSE 5000
 
 ENTRYPOINT ["python3"]
 CMD ["api.py"]
